@@ -1,0 +1,10 @@
+echo Vote username to delete:
+read user
+proc=`pgrep -u $user`
+for p in $proc
+do
+sudo kill $p
+echo Proccess: $p - killed!
+done
+sudo userdel $user
+echo $user - deleted!

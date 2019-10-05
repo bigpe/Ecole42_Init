@@ -1,0 +1,5 @@
+users=`cat /etc/passwd | sed "s/ /-/g"`
+for u in $users
+do
+	echo $u | awk -F ':' '{print "LOGIN: " $1, "| UID: " $3, "| PATH: " $6}'
+done	

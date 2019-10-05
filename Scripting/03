@@ -1,0 +1,19 @@
+echo Vote number of file to create: 
+read nu
+let nu=$nu+1
+VAR=1
+while [ $VAR -gt -1 ]
+do
+if [ $VAR -eq $nu ]
+then
+break
+fi
+if [ $VAR -lt 10 ]
+then
+touch 0$VAR
+else
+touch $VAR
+fi
+echo File: $VAR - created!
+let VAR=$VAR+1
+done

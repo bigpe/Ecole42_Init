@@ -1,0 +1,1 @@
+nslookup 192.168.21.38 | grep name | awk {'print $4'}

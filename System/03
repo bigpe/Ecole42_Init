@@ -1,0 +1,5 @@
+1. hostnamectl set-hostname $NAME
+2. Перезагрузить систему
+Или
+1. vi etc/hostname
+2. Перезагрузить систему
